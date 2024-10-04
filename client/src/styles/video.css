@@ -1,0 +1,124 @@
+.videos {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.videos video {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.local {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.remote {
+  width: 80%;
+  max-width: 800px;
+  max-height: 600px;
+}
+
+.buttonsContainer {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.button {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+.hangup {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.more {
+  position: relative;
+}
+
+.popover {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.more:focus .popover {
+  display: block;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal h3 {
+  margin-bottom: 20px;
+}
+
+.modal .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal .container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal .container .secondary {
+  background-color: #f1f1f1;
+}
+
+.modal .container button:hover {
+  background-color: #e1e1e1;
+}

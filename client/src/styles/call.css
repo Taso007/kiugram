@@ -1,0 +1,152 @@
+.videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #1e1e1e;
+  padding: 10px;
+}
+
+video {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.local {
+  margin-bottom: 10px;
+}
+
+.buttonsContainer {
+  margin-top: 10px;
+}
+
+.hangup.button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hangup.button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.hangup.button:hover:not(:disabled) {
+  background-color: #c0392b;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-video {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.modal-video h3 {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container .secondary {
+  background-color: #7f8c8d;
+  color: white;
+}
+
+.container .secondary:hover {
+  background-color: #95a5a6;
+}
+
+.container .start {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.container .start:hover {
+  background-color: #27ae60;
+}
+
+.incoming-call-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  padding: 20px;
+  text-align: center;
+}
+
+.popup-content h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accept-button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accept-button:hover {
+  background-color: #27ae60;
+}
+
+.reject-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reject-button:hover {
+  background-color: #c0392b;
+}
